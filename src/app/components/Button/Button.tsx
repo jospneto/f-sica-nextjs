@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import {  useEffect, useMemo, useState } from "react";
 
 export const Button = () => {
   const [count, setCount] = useState(0);
@@ -41,10 +41,10 @@ export const Button = () => {
   }
 
   useEffect(() => {
-    // if(count > 10){
+    if(count > 10){
       setCount(4);
       setMessage('O contador foi zerado');
-    // }
+    }
   }, [count])
 
   return (
