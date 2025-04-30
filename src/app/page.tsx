@@ -1,57 +1,16 @@
-
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Button, Footer, Header } from "./components";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Feed } from "./pages";
 
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen">
-      <Header />
-      <div className="flex text-center font-semibold flex-col items-center justify-center h-full gap-2">
-        <Button />
-        <Accordion type="single" collapsible className="flex flex-col w-full bg-blue-200 text-black rounded-xl gap-2">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>Is it styled?</AccordionTrigger>
-            <AccordionContent className="bg-slate-200">
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>Is it animated?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you prefer.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <Dialog>
-      <DialogTrigger asChild>
-        <div>Edit profile</div>
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="grid gap-4 py-4">
-          Teste
-        </div>
-        <DialogFooter>
-          Teste
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
-      </div>
-      <Footer />
-    </div>
+    // <div className="flex flex-col h-screen items-center justify-center bg-gradient-to-b from-blue-500 to-blue-300">
+    //   <form className="flex w-64 h-64 flex-col items-center gap-6 shadow-lg bg-gradient-to-b from-blue-500 to-blue-300 rounded-xl p-4 justify-center">
+    //     <h1 className="text-white text-2xl font-bold">Login</h1>
+    //     <input type="text" placeholder="Email" className="w-full p-2 rounded-md" />
+    //     <input type="password" placeholder="Password" className="w-full p-2 rounded-md" />
+    //     <button type="submit" className="bg-white flex items-center justify-center w-full text-center text-blue-500 p-2 rounded-md">Login</button>
+    //   </form>
+    // </div>
+    <Feed />
   );
 }
